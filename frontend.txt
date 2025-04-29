@@ -1,3 +1,0 @@
-# Quiz Application (Frontend)  
-This repository contains the frontend of our DBMS Quiz Application.  
-- HTML, CSS, JavaScript 

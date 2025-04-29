@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>New MCQ</title>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel='stylesheet' type='text/css' href=''>
+	<style>
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #f0f2fa;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2 {
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.inputTypeText,
+		.inputTypeSelect {
+			padding: 10px 14px;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			font-size: 15px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.default-button {
+			background-color: #4f46e5;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 8px;
+			cursor: pointer;
+			font-size: 15px;
+			margin: 10px;
+		}
+
+		.default-button:hover {
+			background-color: #4338ca;
+		}
+
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 40px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		form {
+			background-color: white;
+			border-radius: 16px;
+			padding: 40px;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			max-width: 700px;
+			box-sizing: border-box;
+		}
+
+		.conerRoundTable {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 0 15px;
+		}
+
+		th {
+			text-align: right;
+			vertical-align: top;
+			padding-right: 15px;
+			color: #444;
+			font-weight: normal;
+			width: 40%;
+		}
+
+		td {
+			text-align: left;
+		}
+
+		table td input {
+			width: 100%;
+		}
+
+		.topbar {
+			width: 100%;
+			text-align: right;
+			margin-bottom: 20px;
+		}
+</style>
+
+</style>
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		
+	<center>
+		<div class="topbar">
+				
+		<table width='100%'>
+			<tr>
+				<td align='right'>
+					<button class='default-button' id='userInterfaceThemeIcon'></button>
+					<a href='../../Homepage.php'><button class='default-button'>Back</button></a>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+		<form action='insert.php' method='post'>
+			<h2>Add new Quiz</h2>
+
+			<table class='conerRoundTable default-shadow'>
+				<tr>
+					<th align='right'>Topic</th>
+					<td align='left'><input class='inputTypeText' type='text' name='topic' required></td>
+				</tr>
+				<tr>
+					<th align='right'>How many Questions</th>
+					<td align='left'><input class='inputTypeText' type='number' name='number_of_questions' maxlength='2' required></td>
+				</tr>
+				<tr>
+					<th align='right'>Quiz Time</th>
+					<td align='left'>
+						<div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+							<input class='inputTypeText' type='number' name='time_hours' maxlength='2' required style="width: 80px;">
+							<span>hours</span>
+							<input class='inputTypeText' type='number' name='time_minutes' maxlength='2' required style="width: 80px;">
+							<span>minutes</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			<br><input type='submit' name='submit' value='Create Quiz Form' class='default-button'>
+		</form>
+	
+	</center>
+</div>
+</body>
+
+</html>

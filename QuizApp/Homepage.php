@@ -4,7 +4,12 @@ session_start();
 
   $_SESSION['userId'] = "AS100100";
 
-	$userId=$_SESSION['userId'];
+  $_SESSION['db_servername'] = "localhost";
+  $_SESSION['db_username'] = "root";
+  $_SESSION['db_password'] = "";
+  $_SESSION['db_name'] = "quiz_system";
+
+   $userId=$_SESSION['userId'];
 
 ?>
 
